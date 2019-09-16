@@ -2,7 +2,7 @@ package com.xj.springboot01;
 
 import java.util.Arrays;
 import java.util.HashMap;
-/*
+/**
     题目：
         给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
     实例：
@@ -15,7 +15,7 @@ import java.util.HashMap;
         若有，则输出这两个 nums数组元素 对应的value（即题目要求的下标）
         若没有，则按照（nums数组元素所对应的值为key，nums数组元素的下标为value）入库
 */
-public class Solution1 {
+public class LeetCode_1 {
 
     public static int[] twoSum(int[] nums, int target){
 
