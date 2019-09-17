@@ -1,7 +1,6 @@
 package com.xj.springboot01;
 
 import com.xj.springboot01.relativeClass.ListNode;
-
 /*
     题目：
         给出两个非空的链表用来表示两个非负的整数。
@@ -15,20 +14,21 @@ import com.xj.springboot01.relativeClass.ListNode;
     解答：
         我们使用变量来跟踪进位，并从包含最低有效位的表头开始模拟逐位相加的过程。
  */
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+    /**
+     * Definition for singly-linked list.
+     * public class ListNode {
+     *     int val;
+     *     ListNode next;
+     *     ListNode(int x) { val = x; }
+     * }
+     */
 public class LeetCode_2 {
+
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
         ListNode currNewNode = head;// 记录新链表的 当前新节点 ，开始是头节点
-        ListNode p = l1, q = l2;
-        int carry = 0;
+        ListNode p = l1, q = l2;//两条链表的遍历指针p和q
+        int carry = 0;//carry表示进位
         while(p!=null || q!=null){
 
             int x = p != null? p.val : 0;
