@@ -33,7 +33,7 @@ public class LeetCode_1 {
 
     public static void main(String[] args) {
         int[] nums = { 2, 7, 11, 15 };
-        int target = 18;
+        int target = 13;
         int[] ans = twoSum(nums, target);
         if (ans[0] == -1) {
             System.out.println("没有找到符合条件的两个数！");
